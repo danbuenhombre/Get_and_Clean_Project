@@ -31,7 +31,20 @@ More information about the raw data can be found here: http://archive.ics.uci.ed
 8.  Save the output to a file using write.table (e.g. > write.table(myData, file = "./finalout.txt") )
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
+1.  Read features.txt which has the column names for the 561 raw data columns
+2.  Assign columns names "featureID" and "feature" to the features data frame
+3.  Replace parenthesis and comma characters in the feature names with "-"
+4.  Read activity_labels.txt which has the descriptions for the activity ID references in the raw data
+5.  Assign column names "activityID" and "activity" to the activities data frame
+6.  Read train data from train/X_train.txt
+7.  Assign columns names using the features data frame
+8.  Subset the train data with just the columns with 'mean' and 'std' in the name
+9.  Read train/subject_train.txt which has the subject IDs of the raw train data
+10.  Assign a column name "subjectID"
+11.  Read train/y_train.txt which has the activity ID for the train data set
+12.  Assign a column name "activityID"
+13.  Merge activities from step 5 with the activity IDs from step 12
+14.  Create a final train data frame by combining (cbind) rawTran with the subject and activity data frames
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
