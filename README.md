@@ -21,7 +21,6 @@ More information about the raw data can be found here: http://archive.ics.uci.ed
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-Description on how to create the tidy data file (1. download the data, ...)/
 1.  Download the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 2.  Move the zip file to a new directory (e.g. ~/project)
 3.  Unzip the file
