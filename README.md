@@ -22,14 +22,14 @@ More information about the raw data can be found here: http://archive.ics.uci.ed
 
 ###Guide to create the tidy data file
 Description on how to create the tidy data file (1. download the data, ...)/
-1. Download the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-2. Move the zip file to a new directory (e.g. ~/project)
-3. Unzip the file
-4. Pull run_analyze.R from github and put in directory in step 2 above
-5. Open R Studio and set the working directory to the directory in step 2 above
-6. Source the run_analyze.R script
-7. Call run_analyze() function with no arguments and save to a variable (e.g.  > myData <- run_analyze() )
-8. Save the output to a file using write.table (e.g. > write.table(myData, file = "./finalout.txt") )
+1.  Download the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+2.  Move the zip file to a new directory (e.g. ~/project)
+3.  Unzip the file
+4.  Pull run_analyze.R from github and put in directory in step 2 above
+5.  Open R Studio and set the working directory to the directory in step 2 above
+6.  Source the run_analyze.R script
+7.  Call run_analyze() function with no arguments and save to a variable (e.g.  > myData <- run_analyze() )
+8.  Save the output to a file using write.table (e.g. > write.table(myData, file = "./finalout.txt") )
 
 ###Cleaning of the data
 Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
